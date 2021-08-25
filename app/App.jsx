@@ -51,7 +51,7 @@ export default class App extends React.Component {
         <div>
           <label htmlFor='task'>Task name</label>
           <input type='text' id='task' onChange={(e)=>this.setState({newTask:e.target.value})} />
-          <button onClick={() => addTask()}>+</button>
+          <button onClick={this.addTask}>+</button>
         </div>
 
         <Notes notes = {notes} />
